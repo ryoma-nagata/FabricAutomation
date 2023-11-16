@@ -1,5 +1,5 @@
 @description('''
-ロジックアプリのロケーション
+ロジックアプリのロケーション。既定でリソースグループと同じリージョンになります
 ''')
 param location string = resourceGroup().location
 
@@ -24,13 +24,12 @@ param capacityName string = 'demofabric'
 @description('''
 対象のFabricが存在するリソースグループ名
 ''')
-param resourceGroupName string = resourceGroup().name
+param resourceGroupName string 
 
 @description('''
 対象のFabricが存在するサブスクリプションID
 ''')
-param subscriptionId string = subscription().subscriptionId
-
+param subscriptionId string 
 @description('''
 actionがscalingの場合の変更後SKU.
 ''')

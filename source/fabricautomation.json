@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.23.1.45101",
-      "templateHash": "4714212535938920813"
+      "templateHash": "3570570251550531795"
     }
   },
   "parameters": {
@@ -13,7 +13,7 @@
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
       "metadata": {
-        "description": "ロジックアプリのロケーション\n"
+        "description": "ロジックアプリのロケーション。既定でリソースグループと同じリージョンになります\n"
       }
     },
     "logicAppsName": {
@@ -42,14 +42,12 @@
     },
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "[resourceGroup().name]",
       "metadata": {
         "description": "対象のFabricが存在するリソースグループ名\n"
       }
     },
     "subscriptionId": {
       "type": "string",
-      "defaultValue": "[subscription().subscriptionId]",
       "metadata": {
         "description": "対象のFabricが存在するサブスクリプションID\n"
       }
