@@ -212,7 +212,7 @@ resource logicApps 'Microsoft.Logic/workflows@2017-07-01' = {
                     and: [
                       {
                         equals: [
-                          ''
+                          '@body(\'Fabric_状態解析\')?[\'properties\']?[\'state\']'
                           'Paused'
                         ]
                       }
@@ -253,7 +253,7 @@ resource logicApps 'Microsoft.Logic/workflows@2017-07-01' = {
                     and: [
                       {
                         equals: [
-                          ''
+                          '@body(\'Fabric_状態解析\')?[\'sku\']?[\'name\']'
                           '@parameters(\'sku\')'
                         ]
                       }
@@ -285,7 +285,7 @@ resource logicApps 'Microsoft.Logic/workflows@2017-07-01' = {
                     and: [
                       {
                         equals: [
-                          ''
+                          '@body(\'Fabric_状態解析\')?[\'properties\']?[\'state\']'
                           'Active'
                         ]
                       }

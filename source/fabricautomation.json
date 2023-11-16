@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.23.1.45101",
-      "templateHash": "3570570251550531795"
+      "templateHash": "17971312258250335840"
     }
   },
   "parameters": {
@@ -240,7 +240,7 @@
                         "and": [
                           {
                             "equals": [
-                              "",
+                              "@body('Fabric_状態解析')?['properties']?['state']",
                               "Paused"
                             ]
                           }
@@ -281,7 +281,7 @@
                         "and": [
                           {
                             "equals": [
-                              "",
+                              "@body('Fabric_状態解析')?['sku']?['name']",
                               "@parameters('sku')"
                             ]
                           }
@@ -313,7 +313,7 @@
                         "and": [
                           {
                             "equals": [
-                              "",
+                              "@body('Fabric_状態解析')?['properties']?['state']",
                               "Active"
                             ]
                           }
