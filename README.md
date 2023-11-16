@@ -1,6 +1,6 @@
 ## 手順
 
-1. [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2Fryoma-nagata%2FFabricAutomation%2Fmain%2Fsource%2Ffabricautomation.json)をデプロイ  
+1. [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fryoma-nagata%2FFabricAutomation%2Fmain%2Fsource%2Ffabricautomation.json)をデプロイ  
 actionパラメータでは、ロジックアプリの実行するいずれかの操作を指定できます  
 停止したい場合：suspend  
 開始したい場合：resume  
