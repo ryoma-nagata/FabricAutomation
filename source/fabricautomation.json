@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.23.1.45101",
-      "templateHash": "17971312258250335840"
+      "version": "0.26.54.24096",
+      "templateHash": "1066856956805370092"
     }
   },
   "parameters": {
@@ -143,7 +143,7 @@
                   "type": "ManagedServiceIdentity"
                 },
                 "method": "GET",
-                "uri": "https://management.azure.com/subscriptions/@{parameters('SubscriptionId')}/resourceGroups/rg-analytics-pj/providers/Microsoft.Fabric/capacities/demofabric?api-version=2022-07-01-preview"
+                "uri": "https://management.azure.com/subscriptions/@{parameters('SubscriptionId')}/resourceGroups/@{parameters('ResourceGroupName')}/providers/Microsoft.Fabric/capacities/demofabric?api-version=2022-07-01-preview"
               }
             },
             "Fabric_状態解析": {
