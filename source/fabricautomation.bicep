@@ -115,7 +115,7 @@ resource logicApps 'Microsoft.Logic/workflows@2017-07-01' = {
               type: 'ManagedServiceIdentity'
             }
             method: 'GET'
-            uri: 'https://management.azure.com/subscriptions/@{parameters(\'SubscriptionId\')}/resourceGroups/@{parameters(\'ResourceGroupName\')}/providers/Microsoft.Fabric/capacities/demofabric?api-version=2022-07-01-preview'
+            uri: 'https://management.azure.com/subscriptions/@{parameters(\'SubscriptionId\')}/resourceGroups/@{parameters(\'ResourceGroupName\')}/providers/Microsoft.Fabric/capacities/@{parameters(\'capacityName\')}?api-version=2022-07-01-preview'
           }
         }
         'Fabric_状態解析': {
