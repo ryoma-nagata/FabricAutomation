@@ -244,7 +244,7 @@ resource logicApps 'Microsoft.Logic/workflows@2017-07-01' = {
                             }
                           }
                           method: 'PATCH'
-                          uri: 'https://management.azure.com/subscriptions/@{parameters(\'SubscriptionId\')}/resourceGroups/@{parameters(\'ResourceGroupName\')}/providers/Microsoft.Fabric/capacities/\n@{parameters(\'CapacityName\')}?api-version=2022-07-01-preview'
+                          uri: 'https://management.azure.com/subscriptions/@{parameters(\'SubscriptionId\')}/resourceGroups/@{parameters(\'ResourceGroupName\')}/providers/Microsoft.Fabric/capacities/@{parameters(\'CapacityName\')}?api-version=2022-07-01-preview'
                         }
                       }
                     }
